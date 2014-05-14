@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -16,11 +15,17 @@ import java.util.Map;
 public class HelloController {
 
     @RequestMapping("/accounts/{accountId}")
-    public String hello(@PathVariable String accountId, Map<String, Object> hello) {
+    public String hello(@PathVariable String accountId, Map<String, Object> he) {
 
-        hello.put("accountId", accountId);
-        hello.put("message", "Winter is coming");
+        he.put("accountId", accountId);
+        he.put("message", "Winter is coming");
 
         return "hello";
+    }
+
+    @RequestMapping("/")
+    public String echo() {
+
+        return "echo";
     }
 }
