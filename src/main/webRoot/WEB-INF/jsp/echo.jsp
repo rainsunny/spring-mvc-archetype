@@ -16,5 +16,13 @@
 
 <p>echo ...</p>
 
+<div>
+    <a href="form" >Send message</a>
+</div>
+
+<div>
+    <a href="list-messages">View all messages</a>
+</div>
+
 </body>
 </html>
